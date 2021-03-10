@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\QA.Workflow.Business.Interfaces\QA.Workflow.Business.Interfaces.csproj" />
+    <ProjectReference Include="..\QA.Worklfow.Ioc\QA.Workflow.Middlewares.csproj" />
+  </ItemGroup>
+
+
+</Project>

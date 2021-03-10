@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Repository\Admin\" />
+    <Folder Include="Repository\" />
+    <Folder Include="Repository\Shared\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\QA.Workflow.Data.Entities\QA.Workflow.Data.Entities.csproj" />
+    <ProjectReference Include="..\QA.Workflow.Data.Interfaces\QA.Workflow.Data.Interfaces.csproj" />
+    <ProjectReference Include="..\QA.Workflow.Infrastructure\QA.Workflow.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>

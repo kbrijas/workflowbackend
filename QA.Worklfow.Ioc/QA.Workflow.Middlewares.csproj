@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Diagnostics.Abstractions" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\QA.Workflow.Business\QA.Workflow.Business.csproj" />
+    <ProjectReference Include="..\QA.Workflow.Data\QA.Workflow.Data.csproj" />
+    <ProjectReference Include="..\QA.Workflow.Exception\QA.Workflow.Exception.csproj" />
+    <ProjectReference Include="..\QA.Workflow.Infrastructure\QA.Workflow.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>

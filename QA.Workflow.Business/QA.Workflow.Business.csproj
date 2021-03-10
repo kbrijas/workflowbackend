@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\QA.Workflow.Business.Interfaces\QA.Workflow.Business.Interfaces.csproj" />
+    <ProjectReference Include="..\QA.Workflow.Data.Entities\QA.Workflow.Data.Entities.csproj" />
+    <ProjectReference Include="..\QA.Workflow.Data.Interfaces\QA.Workflow.Data.Interfaces.csproj" />
+    <ProjectReference Include="..\QA.Workflow.Infrastructure\QA.Workflow.Infrastructure.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Shared\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.1.1" />
+  </ItemGroup>
+
+</Project>
