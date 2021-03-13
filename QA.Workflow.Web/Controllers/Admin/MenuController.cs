@@ -24,5 +24,15 @@ namespace QA.Workflow.Web.Controllers.Admin
         {
             return Ok(await _menuMasterService.GetAllMenuAsync());
         }
+
+        /// <summary>
+        /// Get All Menu Async
+        /// </summary>
+        /// <returns></returns>
+        [HttpGet("menudp")]
+        public async Task<ActionResult> GetAllMenuDropDownAsync()
+        {
+            return Ok(await _menuMasterService.GetAllMenuDropDownAsync());
+        }
     }
 }

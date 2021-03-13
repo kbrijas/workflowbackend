@@ -5,7 +5,7 @@ using QA.Workflow.Exception;
 using System.Net;
 using System.Threading.Tasks;
 
-namespace QA.Framework.Exception
+namespace QA.Framework.Ioc
 {
     public class ExceptionMiddleware
     {

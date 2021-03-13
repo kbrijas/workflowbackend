@@ -4,6 +4,8 @@ using QA.Framework.DataEntities;
 using QA.Framework.DataEntities.Entities;
 using QA.Workflow.Business.Admin;
 using QA.Workflow.Business.Interfaces.Admin;
+using QA.Workflow.Data.Interfaces.Admin;
+using QA.Workflow.Data.Repository.Admin;
 using QR.Workflow.Infrastructure.Dapper;
 using QR.Workflow.Infrastructure.DataContext;
 using QR.Workflow.Infrastructure.Repository;
@@ -35,7 +37,11 @@ namespace QA.Framework.Ioc
 
         private static void RepositoryDiConfigure(IServiceCollection services)
         {
+            /* Repositories */
             services.AddScoped<IRepository<MenuMaster>, Repository<MenuMaster>>();
+            
+            /* Generic Repositories */
+            services.AddScoped<IMenuRepository, MenuRepository>();
         }
     }
 }

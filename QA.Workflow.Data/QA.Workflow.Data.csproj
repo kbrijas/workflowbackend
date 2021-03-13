@@ -5,8 +5,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Repository\Admin\" />
-    <Folder Include="Repository\" />
     <Folder Include="Repository\Shared\" />
   </ItemGroup>
 

@@ -26,6 +26,7 @@ namespace QA.Workflow.Web
             var connection = Configuration.GetConnectionString("DefaultConnection");
             services.RegisterServices(connection);
             services.AddAutoMapperConfiguration();
+            services.AddSwaggerConfiguration();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -34,16 +35,17 @@ namespace QA.Workflow.Web
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
+                app.UseSwaggerSetup();
             }
 
             app.UseRouting();
-
             app.UseAuthorization();
-
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
             });
+
+            
         }
     }
 }
